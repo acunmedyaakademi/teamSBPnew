@@ -460,7 +460,6 @@ hr {
 
 .p-footer {
   background-color: #151B28;
-  grid-area: p-footer;
 }
 
 @media (width < 769px) {
@@ -484,15 +483,12 @@ hr {
 
 .p-footertop {
   padding-top: 48px;
-  display: flex;
   gap: 250px;
   justify-content:center;
-  grid-area: p-footertop;
 }
 
 .p-footerimg {
   width: 247px;
-  grid-area: p-footerimg;
   flex-direction: column;
 }
 
@@ -508,7 +504,6 @@ hr {
   display: flex;
   gap: 120px;
   margin-bottom: 64px;
-  grid-area: p-footerlists;
 }
 
 .p-footerlist a {
@@ -517,9 +512,6 @@ hr {
   margin-bottom: 24px;
 }
 
-.p-footerlist {
-  grid-area: p-footerlist;
-}
 
 .p-footerlist p {
   color: #A5ACBA;
@@ -532,7 +524,6 @@ hr {
   padding-bottom: 64px;
   justify-content:center;
   gap: 900px ;
-  grid-area: p-footerbtm;
 }
 
 .p-footerbtm h4 {
@@ -551,22 +542,18 @@ hr {
 
 
 @media (width < 769px) {
-  .p-footertop {
+  .pfooterlists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap:0 ;
-    grid-row-gap: 32px ;
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap:0px ;
+    grid-row-gap: 0px ;
   }
   .p-footerimg { grid-area: 1 / 1 / 2 / 2; }
-  .p-footer-one { 
-    grid-area: 1 / 3 / 2 / 4;
-    justify-self: start;
-  }
+  .p-footer-one { grid-area: 1 / 3 / 2 / 4; }
   .p-footer-two { grid-area: 2 / 1 / 3 / 2; }
   .p-footer-three { grid-area: 2 / 2 / 3 / 3;}
   .p-footer-four {grid-area: 2 / 3 / 3 / 4;}
-
 
 }
 
@@ -854,3 +841,323 @@ hr {
 
 /* HELP PAGE */
 
+/* CAREERS PAGE */
+
+.c-section-background {
+  background: var(--neutral-50, #FAFBFC);
+}
+
+.c-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid var(--neutral-600, #EAEBF0);
+}
+
+.c-hamburgermenu{
+  display: none;
+}
+
+.c-nav {
+  display: flex;
+  gap: 32px;
+  padding: 7px;
+}
+
+.c-navbar {
+  display: flex;
+  gap: 32px;
+  padding: 20px;
+
+}
+
+.c-nav a {
+  text-decoration: none;
+  color: #272D37;
+}
+
+.c-nav li {
+  list-style: none;
+}
+
+.c-header-btn {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+}
+
+.c-headerbtn1 a{
+  color: #437EF7;
+  text-decoration: none;
+}
+
+.c-headerbtn2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color:#437EF7 ;
+  padding: 12px 18px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+}
+
+
+
+@media (width < 769px) {
+  .c-hamburgermenu {
+    display: block;
+  }
+  .c-nav {
+    display: none;
+  }
+  .c-header-btn{
+    display: none;
+  }
+ 
+}
+
+/* HERO */
+
+.c-hero {
+  display: flex;
+  justify-content: end;
+  gap: 64px;
+  margin-bottom: 48px;
+}
+
+.c-heroflex {
+  display: flex;
+  color: #437EF7;
+  margin-bottom: 16px;
+}
+
+.c-hero-left{
+  width: 524px;
+  color: var(--gray-50, #5F6D7E);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 150px;
+  grid-area: c-hero-left;
+}
+
+.c-hero-left h1 {
+  color: var(--gray-700, #272D37);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 60px;
+  padding-bottom: 21px;
+}
+
+.c-hero-btn{
+  display: flex;
+  margin-top: 48px;
+  gap: 42px;
+}
+
+.c-hero-right {
+  justify-items: end;
+  grid-area: c-hero-right;
+}
+
+@media (width < 769px) {
+  .c-hero {
+    display: grid;
+    grid-template-areas:
+    "c-hero-right"
+    "c-hero-left"
+    ;
+  }
+  .c-hero-btn2 {
+    display: none;
+  }
+  .c-hero-left {
+    padding: 0;
+  }  
+}
+
+/* HERO */
+
+/* TEXT SECTİON */
+
+.c-text-sections{
+  background: var(--neutral-50, #FAFBFC);
+}
+
+.c-text {
+  padding-inline: 250px ;
+}
+
+.c-section {
+  padding: 48px;
+}
+
+.c-section h2{
+  color: var(--gray-700, #272D37);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-top: 48px;
+}
+.c-section p {
+  color: var(--gray-50, #5F6D7E);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 16px;
+}
+
+.form {
+  border-radius: 8px;
+  background: var(--base-white, #FFF);
+  padding: 48px;
+  width: 840px;
+}
+
+.name {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+.resume{
+  display: flex;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.tablo {
+  padding-bottom: 24px;
+}
+
+.bton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bluesignup {
+  padding-bottom: 24px;
+}
+
+.c-table-btn {
+  display: flex;
+}
+
+.c-t-btn{
+  border-radius: 0px 6px 6px 0px;
+  border-top: 1px solid var(--neutral-700, #DAE0E6);
+  border-right: 1px solid var(--neutral-700, #DAE0E6);
+  border-bottom: 1px solid var(--neutral-700, #DAE0E6);
+  background: var(--neutral-300, #F7F7F8);
+  width: 88px;
+}
+
+.c-t-btn a {
+  text-decoration: none;  
+  color: var(--gray-700, #272D37);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 12px 18px;
+}
+
+.link {
+  padding: 11px 16px;
+  align-items: center;
+  border-radius: 6px 0px 0px 6px;
+  border: 1px solid var(--neutral-700, #DAE0E6);
+  background: var(--base-white, #FFF);
+  width: 288px;
+}
+
+input {
+  border-radius: 6px;
+  border: 1px solid var(--neutral-700, #DAE0E6);
+  background: var(--base-white, #FFF);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: 376px;
+  height: 46px;
+  padding: 12px 16px;
+  color: var(--gray-25, #919BA7);
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.about {
+  width: 776px;
+  height: 132px;
+}
+
+@media (width < 769px) {
+  .c-text {
+    padding-inline: 50px;
+  }
+  .form {
+    width: 500px;
+  }
+  .c-firstinput {
+    width: 200px ;
+  }
+  .link {
+    width: 112px ;
+  }
+  .about {
+    width: 420px;
+  }
+  .icrk p {
+    padding-top: 0;
+  }
+}
+/* TEXT SECTİON */
+
+.c-email {
+  width: 302px;
+}
+
+.c-email h4 {
+  color: var(--neutral-200, #F9F9F9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 24px;
+}
+
+.c-email p{
+  color: var(--neutral-800, #A5ACBA);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+
+@media (width <769px) {
+  .h-footerlists{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .h-footer-bottom {
+    gap: 0px;
+  }
+
+  .h-footer-three  {
+    display: none;
+  }
+
+  .h-footer-img { grid-area: 1 / 1 / 2 / 2; }
+  .h-footer-one { grid-area: 2 / 1 / 3 / 2; }
+  .h-footer-two { grid-area: 2 / 2 / 3 / 3; }
+  .h-footer-three { grid-area: 1 / 2 / 2 / 3; }
+}
+
+/* CAREERS PAGE */
