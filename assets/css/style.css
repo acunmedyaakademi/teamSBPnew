@@ -10,6 +10,10 @@ body {
 
 /* cs-header start  */
 
+.cs-header {
+  border-bottom: 1px solid #eaebf0;
+
+}
 .cs-header .hamburger {
     display: none;
 }
@@ -2115,7 +2119,7 @@ hr {
   width: 840px;
 }
 
-.name {
+.form .name {
   display: flex;
   gap: 24px;
   padding-bottom: 24px;
@@ -2170,7 +2174,7 @@ hr {
   width: 288px;
 }
 
-input {
+.form input {
   border-radius: 6px;
   border: 1px solid var(--neutral-700, #DAE0E6);
   background: var(--base-white, #FFF);
